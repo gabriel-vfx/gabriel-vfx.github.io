@@ -1,0 +1,44 @@
+<div id="services">
+	<!-- Images used to open the lightbox -->
+	<div class="row">
+		{%- for item in page.gallery -%}
+		<div class="column">
+			<img src="{{ item.thumb_url }}" onclick="openModal();currentSlide({{ forloop.index }})" class="hover-shadow">
+		</div>
+		{%- endfor -%}
+	</div>
+
+	<div class="row">
+		<hr>
+	</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="gallery" class="modal">
+	<div class="modal-content">
+		{%- for item in page.gallery -%}
+		<div class="slides">
+			<div class="numbertext">{{ forloop.index }} / {{ forloop.length }}</div>
+			<img src="{{ item.image_url }}">
+		</div>
+		{%- endfor -%}
+	
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+		<!-- Caption text -->
+		<div class="caption-container">
+			<b id="caption"></b>
+		</div>
+	
+		<!-- Thumbnail image controls -->
+		<div class="row">
+			{%- for item in page.gallery -%}
+			<img class="demo" src="{{ item.thumb_url }}" onclick="currentSlide({{ forloop.index }})" {% if item.caption %}alt="{{ item.caption }}"{% endif %}>
+			{%- endfor -%}
+		</div>
+	</div>
+
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+</div>

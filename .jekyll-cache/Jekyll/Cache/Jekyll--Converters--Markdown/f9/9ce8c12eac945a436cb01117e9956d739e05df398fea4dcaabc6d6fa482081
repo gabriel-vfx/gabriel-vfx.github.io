@@ -1,0 +1,64 @@
+I"n<div id="services">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1></h1>
+        </div>
+    </div>
+    
+    <div class="row"></div>
+</div>
+<div id="services">
+	<!-- Images used to open the lightbox -->
+	<div class="row"></div>
+
+	<div class="row">
+		<hr />
+	</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="gallery" class="modal">
+	<div class="modal-content"><!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+		<!-- Caption text -->
+		<div class="caption-container">
+			<b id="caption"></b>
+		</div>
+	
+		<!-- Thumbnail image controls -->
+		<div class="row"></div>
+	</div>
+
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+</div>
+<div id="contact">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1></h1><a href="mailto:gabriel.hennessy@pm.me">gabriel.hennessy@pm.me</a></div>
+    </div>
+    <div class="row">
+        <hr />
+    </div>
+</div>
+<footer id="footer-content" class="bg-grau">
+    <div id="footer">
+        <div class="row">
+            <div class="small-12 columns">
+                <h5>About</h5>
+                
+                <p>I work as a visual effects artist in a post production house in Belgium on feature movies and commercials. Filming has been one of my passions since my very early days. Every part of filmmaking interests me, whether it is building a story, shooting, or finishing it to show the world. Telling stories is what I love to do virtually and in the real world.</p>
+        </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="small-12 columns" style="text-align: right;">
+                <a href="#top-of-page">
+                    <arrow class="arrow up"></arrow>
+                </a>
+            </div>
+        </div>
+    </div><!-- /#footer -->
+</footer>
+:ET

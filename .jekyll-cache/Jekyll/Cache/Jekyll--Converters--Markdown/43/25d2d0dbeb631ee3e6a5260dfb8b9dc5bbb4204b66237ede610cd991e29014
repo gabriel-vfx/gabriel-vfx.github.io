@@ -1,0 +1,116 @@
+I"<div id="services">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Filming Services</h1>
+        </div>
+    </div>
+    
+    <div class="row"><div class="large-4 columns" style="text-align: center;">
+            <h3>Events</h3>
+            <a>Make it forever.<br />Be it a concert, live show, wedding or anything else in this world.</a>
+        </div><div class="large-4 columns" style="text-align: center;">
+            <h3>Narrative</h3>
+            <a>Add moving pictures to your story.<br />Pictures can add more than a 1000 words to describe your story.</a>
+        </div><div class="large-4 columns" style="text-align: center;">
+            <h3>Commercial</h3>
+            <a>Show the world your product or service with images.<br />Images can be a great way to communicate.</a>
+        </div></div>
+</div>
+<script src="/assets/js/gallery.js"></script>
+
+<div id="services">
+	<!-- Images used to open the lightbox -->
+	<div class="row"><div class="column">
+			<img src="images/pic_01_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_05_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_03_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_04_thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_06_thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_07_thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_02_thumb.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" />
+		</div><div class="column">
+			<img src="images/pic_08_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" />
+		</div></div>
+
+	<div class="row">
+		<hr />
+	</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="gallery" class="modal">
+	<div class="test">
+		<div class="modal-content"><div class="slides">
+				<div class="numbertext">1 / 8</div>
+				<img src="images/pic_01.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">2 / 8</div>
+				<img src="images/pic_05.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">3 / 8</div>
+				<img src="images/pic_03.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">4 / 8</div>
+				<img src="images/pic_04.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">5 / 8</div>
+				<img src="images/pic_06.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">6 / 8</div>
+				<img src="images/pic_07.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">7 / 8</div>
+				<img src="images/pic_02.jpg" />
+			</div><div class="slides">
+				<div class="numbertext">8 / 8</div>
+				<img src="images/pic_08.jpg" />
+			</div><!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!-- Caption text -->
+			<div class="caption-container">
+				<b id="caption"></b>
+			</div>
+		
+			<!-- Thumbnail image controls -->
+			<div class="row"><img class="demo" src="images/pic_01_thumb.jpg" onclick="currentSlide(1)" /><img class="demo" src="images/pic_05_thumb.jpg" onclick="currentSlide(2)" /><img class="demo" src="images/pic_03_thumb.jpg" onclick="currentSlide(3)" /><img class="demo" src="images/pic_04_thumb.jpg" onclick="currentSlide(4)" /><img class="demo" src="images/pic_06_thumb.jpg" onclick="currentSlide(5)" /><img class="demo" src="images/pic_07_thumb.jpg" onclick="currentSlide(6)" /><img class="demo" src="images/pic_02_thumb.jpg" onclick="currentSlide(7)" /><img class="demo" src="images/pic_08_thumb.jpg" onclick="currentSlide(8)" /></div>
+		</div>
+	</div>
+
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+</div>
+<div id="contact">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Let's get in touch</h1><p><a href="mailto:gabriel.hennessy@pm.me">gabriel.hennessy@pm.me</a></p>
+        </div>
+        <hr />
+    </div>
+</div>
+<footer id="footer-content" class="bg-grau">
+    <div id="footer">
+        <div class="row">
+            <div class="small-12 columns">
+                <h5>About</h5>
+                
+                <p>I work as a visual effects artist in a post production house in Belgium on feature movies and commercials. Filming has been one of my passions since my very early days. Every part of filmmaking interests me, whether it is building a story, shooting, or finishing it to show the world. Telling stories is what I love to do virtually and in the real world.</p>
+        </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="small-12 columns" style="text-align: right;">
+                <a href="#top-of-page">
+                    <arrow class="arrow up"></arrow>
+                </a>
+            </div>
+        </div>
+    </div><!-- /#footer -->
+</footer>
+:ET

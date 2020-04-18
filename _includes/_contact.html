@@ -1,0 +1,20 @@
+<div id="contact">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>{{ page.contact_title }}</h1>
+            
+            {%- if page.contact_description -%}
+            <a>{{ page.contact_description }}</a>
+            {%- endif -%}
+
+            {%- if page.contact_email -%}
+            <a href="mailto:{{ page.contact_email }}">{{ page.contact_email }}</a> 
+            {%- else -%}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+</div>

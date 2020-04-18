@@ -1,0 +1,15 @@
+- title: Angel Motion Pictures
+  url: "/#top-of-page"
+  side: left
+
+- title: "Services"
+  url: "/#services"
+  side: right
+
+- title: "About"
+  url: "/#footer"
+  side: right
+
+- title: "Contact"
+  url: "/#contact"
+  side: right
