@@ -446,8 +446,13 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
 
     .topbar-svg {
       width: $topbar-height;
-      height: $topbar-height;
       padding: 0.5rem
+    }
+
+    @media #{$medium-down} {
+      .topbar-svg {
+        width: $topbar-height * 0.75;
+      }
     }
 
     .right-a {
