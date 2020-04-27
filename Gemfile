@@ -8,4 +8,3 @@ group :jekyll_plugins do
 end
 
 gem 'coderay', '1.1.1'
-
