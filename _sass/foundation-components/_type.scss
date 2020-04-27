@@ -51,6 +51,7 @@ $paragraph-font-weight: $font-weight-normal !default;
 $paragraph-font-size: 1rem !default;
 $paragraph-line-height: 1.6 !default;
 $paragraph-margin-bottom: rem-calc(20) !default;
+$paragraph-margin-top: rem-calc(20) !default;
 $paragraph-aside-font-size: rem-calc(14) !default;
 $paragraph-aside-line-height: 1.35 !default;
 $paragraph-aside-font-style: italic !default;
@@ -239,7 +240,8 @@ $align-class-breakpoints:
       font-weight: $paragraph-font-weight;
       font-size: $paragraph-font-size;
       line-height: $paragraph-line-height;
-      margin-bottom: $paragraph-margin-bottom;
+      // margin-bottom: $paragraph-margin-bottom;
+      // margin-top: $paragraph-margin-top;
       text-rendering: $paragraph-text-rendering;
 
       &.lead { @include lead; }

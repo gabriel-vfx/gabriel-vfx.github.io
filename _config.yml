@@ -8,16 +8,16 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Angel Motion Pictures'
+title: 'Gabriel Hennessy'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'A Flexible Theme for Jekyll'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: 'I work as a visual effects artist in a post production house in Belgium on feature movies and commercials. Filming has been one of my passions since my very early days. Every part of filmmaking interests me, whether it is building a story, shooting, or finishing it to show the world. Telling stories is what I love to do virtually and in the real world.'
+description: ''
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>&copy; 2020, Angel Motion Pictures</p>'
+credits: '<p>&copy; 2020, Gabriel Hennessy</p>'
 
 # Main author of the website
 # See > authors.yml

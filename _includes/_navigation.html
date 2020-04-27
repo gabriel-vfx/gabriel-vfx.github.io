@@ -6,57 +6,7 @@
 {%- endcomment -%}
 <div id="navigation" class="fixed">
     <nav class="top-bar" role="navigation" data-topbar>
-        <ul class="title-area">
-            <li class="name">
-                <h1 class="show-for-medium-down" style="text-align:left" ><a href="{{ site.url }}/#top-of-page" class="icon-tree"> {{ site.title }}</a></h1>
-            </li>
-             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar menu-icon">
-                <a onclick="openMenu()"><span>Nav</span></a>
-            </li>
-        </ul>
         <section class="top-bar-section">
-            {%- comment -%}
-
-                    ____  _       __    __     _   __            _             __  _
-                / __ \(_)___ _/ /_  / /_   / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
-                / /_/ / / __ `/ __ \/ __/  /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
-            / _, _/ / /_/ / / / / /_   / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
-            /_/ |_/_/\__, /_/ /_/\__/  /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
-                            /____/                                 /____/
-
-            {%- endcomment -%}
-            <ul class="right">
-                {%- for link in site.data.navigation -%}
-                    {%- if link.url contains 'http' -%}
-                        {%- assign domain = '' -%}
-                        {%- assign _baseurl = '' -%}
-                    {%- elsif link.url == '#' -%}
-                        {%- assign domain = '' -%}
-                        {%- assign _baseurl = site.baseurl -%}
-                    {%- else -%}
-                        {%- assign domain = site.url -%}
-                        {%- assign _baseurl = site.baseurl -%}
-                    {%- endif -%}
-
-                    {%- if link.side == 'right' %}
-                        <li class="divider"></li>
-                        <li{% if link.url == page.url %} class="active" {%- endif -%}>
-                            <a href="{{ domain }}{{ site.baseurl }}{{ link.url }}">{{ link.title | escape }}</a>
-                        </li>
-                    {%- endif -%}
-                {%- endfor -%}
-            </ul>
-            {%- comment -%}
-
-                    __         ______     _   __            _             __  _
-                / /   ___  / __/ /_   / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
-                / /   / _ \/ /_/ __/  /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
-            / /___/  __/ __/ /_   / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
-            /_____/\___/_/  \__/  /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
-                                                                                                /____/
-
-            {%- endcomment -%}
             <ul class="left">
                 {%- for link in site.data.navigation -%}
                     {%- if link.url contains 'http' -%}
@@ -102,6 +52,17 @@
                     {%- endif -%}
                 {%- endfor -%}
                 {%- comment -%}   Second loop finished   {%- endcomment -%}
+            </ul>
+
+            <ul class="right">
+                {%- for icon in page.navigation -%}
+                <li class="topbar-svg">
+                    <a target="_blank" rel="noopener noreferrer" class="right-a" href="{{ icon.link }}">
+                        <img src="{{ icon.icon }}">
+                    </a>
+                    <li class="divider"></li>
+                </li>
+                {%- endfor -%}
             </ul>
         </section>
     </nav>

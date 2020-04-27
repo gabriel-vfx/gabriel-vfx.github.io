@@ -32,7 +32,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 }
 Root {
  inputs 0
- name /home/workstationl/Documents/angelmotionpictures.com/vfx/icon.nk
+ name /home/workstationl/Documents/angelmotionpictures.com/website/feeling-responsive-gh-pages/icon.nk
  project_directory "\[python \{nuke.script_directory()\}]"
  format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
  proxy_type scale
@@ -64,23 +64,24 @@ Text2 {
  font_size_toolbar 100
  font_width_toolbar 100
  font_height_toolbar 100
- message GH
- old_message {{71 72}
+ message AMP
+ old_message {{65 77 80}
    }
  box {0 0 {Reformat1.box_width} {Reformat1.box_width}}
  xjustify center
  yjustify center
  transforms {{0 2}
    }
- font_width_values {{0 100 0 116}
+ font_width_values {{0 100 1 100 2 100 0 116 1 116 2 116}
    }
- font_height_values {{0 100 0 108}
+ font_height_values {{0 100 1 100 2 100 0 108 1 108 2 108}
    }
- baseline_values {{0 0 0 0.4}
+ tracking_values {{1 0 2 0}
    }
- cursor_position 2
+ baseline_values {{0 0 1 0 2 0 0 0.4 1 0.4 2 0.4}
+   }
  font {{ Helvetica : Regular : Helvetica/Helvetica.otf : 0 }}
- global_font_scale {{"Reformat1.box_width * 0.0065"}}
+ global_font_scale {{"Reformat1.box_width * 0.0045"}}
  center {1024 778}
  cursor_initialised true
  autofit_bbox false
@@ -90,11 +91,10 @@ Text2 {
  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
    }
  name Text1
- selected true
  xpos -43
  ypos -182
 }
-set N7b283c0 [stack 0]
+set N572b8a0 [stack 0]
 Reformat {
  type "to box"
  box_width 32
@@ -102,7 +102,7 @@ Reformat {
  xpos -362
  ypos -102
 }
-set N7e3b230 [stack 0]
+set N8883aa0 [stack 0]
 Viewer {
  frame 1
  frame_range 1-100
@@ -110,7 +110,7 @@ Viewer {
  xpos -324
  ypos 108
 }
-push $N7b283c0
+push $N572b8a0
 Reformat {
  type "to box"
  box_width 144
@@ -118,166 +118,18 @@ Reformat {
  xpos 365
  ypos -105
 }
-set N7e5e980 [stack 0]
+set Nca33040 [stack 0]
 Write {
  channels rgba
  file assets/img/msapplication_tileimage.png
  file_type png
  checkHashOnRead false
- version 4
+ version 3
  name Write10
  xpos 494
  ypos 228
 }
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 114
- name Reformat5
- xpos 85
- ypos -102
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-114x114-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write4
- xpos 85
- ypos 70
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 120
- name Reformat6
- xpos 211
- ypos -103
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-120x120-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write5
- xpos 211
- ypos 119
-}
-push $N7e5e980
-Write {
- channels rgba
- file assets/img/apple-touch-icon-144x144-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write7
- xpos 365
- ypos 176
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 152
- name Reformat9
- xpos 612
- ypos -106
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-152x152-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write8
- xpos 612
- ypos 260
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 180
- name Reformat10
- xpos 731
- ypos -106
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-180x180-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write9
- xpos 731
- ypos 297
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 192
- name Reformat12
- xpos 1008
- ypos -108
-}
-Write {
- channels rgba
- file assets/img/touch-icon-192x192.png
- file_type png
- checkHashOnRead false
- version 4
- name Write11
- xpos 1008
- ypos 402
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 76
- name Reformat4
- xpos -34
- ypos -104
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-76x76-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write3
- xpos -34
- ypos 22
-}
-push $N7b283c0
-Reformat {
- type "to box"
- box_width 57
- name Reformat7
- xpos 865
- ypos -106
-}
-Write {
- channels rgba
- file assets/img/apple-touch-icon-precomposed.png
- file_type png
- checkHashOnRead false
- version 4
- name Write6
- xpos 865
- ypos 351
-}
-push $N7e3b230
-Write {
- channels rgba
- file assets/img/favicon-32x32.png
- file_type png
- checkHashOnRead false
- version 4
- name Write1
- xpos -362
- ypos -61
-}
-push $N7b283c0
+push $N572b8a0
 Reformat {
  type "to box"
  box_width 72
@@ -290,8 +142,156 @@ Write {
  file assets/img/apple-touch-icon-72x72-precomposed.png
  file_type png
  checkHashOnRead false
- version 4
+ version 3
  name Write2
  xpos -177
  ypos -26
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 114
+ name Reformat5
+ xpos 85
+ ypos -102
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-114x114-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write4
+ xpos 85
+ ypos 70
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 120
+ name Reformat6
+ xpos 211
+ ypos -103
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-120x120-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write5
+ xpos 211
+ ypos 119
+}
+push $Nca33040
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-144x144-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write7
+ xpos 365
+ ypos 176
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 152
+ name Reformat9
+ xpos 612
+ ypos -106
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-152x152-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write8
+ xpos 612
+ ypos 260
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 180
+ name Reformat10
+ xpos 731
+ ypos -106
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-180x180-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write9
+ xpos 731
+ ypos 297
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 192
+ name Reformat12
+ xpos 1008
+ ypos -108
+}
+Write {
+ channels rgba
+ file assets/img/touch-icon-192x192.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write11
+ xpos 1008
+ ypos 402
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 76
+ name Reformat4
+ xpos -34
+ ypos -104
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-76x76-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write3
+ xpos -34
+ ypos 22
+}
+push $N572b8a0
+Reformat {
+ type "to box"
+ box_width 57
+ name Reformat7
+ xpos 865
+ ypos -106
+}
+Write {
+ channels rgba
+ file assets/img/apple-touch-icon-precomposed.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write6
+ xpos 865
+ ypos 351
+}
+push $N8883aa0
+Write {
+ channels {rgba.red rgba.green rgba.blue rgba.alpha}
+ file assets/img/favicon-32x32.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write1
+ xpos -362
+ ypos -61
 }

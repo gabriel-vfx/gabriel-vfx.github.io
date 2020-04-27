@@ -613,8 +613,10 @@ $crumb-slash: "/";
 
 // We use these to control video container padding and margins
 // $flex-video-padding-top: rem-calc(25);
-$flex-video-padding-bottom: 60.0%;
+$flex-video-padding-bottom: 0%;
 // $flex-video-margin-bottom: rem-calc(16);
+$flex-video-margin-top: rem-calc(32);
+$flex-video-height: 75vh;
 
 // We use this to control widescreen bottom padding
 // $flex-video-widescreen-padding-bottom: 56.34%;
@@ -1434,7 +1436,8 @@ $topbar-menu-link-transform: uppercase;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-$topbar-breakpoint: #{lower-bound($large-range)}; // Change to 9999px for always mobile layout
+// $topbar-breakpoint: #{lower-bound($large-range)}; // Change to 9999px for always mobile layout
+$topbar-breakpoint: 0px; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
